@@ -1,0 +1,385 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+/* line 17, ../../scss/ia/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../../scss/ia/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 30, ../../scss/ia/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 33, ../../scss/ia/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 36, ../../scss/ia/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, ../../scss/ia/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 44, ../../scss/ia/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ======  Base styles - Some starting defaults with low specificity. ====== */
+/* Import @font-face rules here
+
+
+ Set all elements to use border-box by default. Use "inherit" for better specificity
+ http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+/* line 9, ../../scss/ia/_base.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 13, ../../scss/ia/_base.scss */
+body {
+  width: 94%;
+  margin: 0 auto;
+}
+
+/* line 18, ../../scss/ia/_base.scss */
+* {
+  /*outline: 1px solid red;*/
+}
+
+/* line 22, ../../scss/ia/_base.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 26, ../../scss/ia/_base.scss */
+html, button, input, select, textarea {
+  color: #000;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* line 32, ../../scss/ia/_base.scss */
+::-moz-selection {
+  background: #B3D4FC;
+  text-shadow: none;
+}
+
+/* line 36, ../../scss/ia/_base.scss */
+::selection {
+  background: #B3D4FC;
+  text-shadow: none;
+}
+
+/* line 41, ../../scss/ia/_base.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 47, ../../scss/ia/_base.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 51, ../../scss/ia/_base.scss */
+input[type="submit"], input[type="search"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+/* line 56, ../../scss/ia/_base.scss */
+[type="button"] {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 65, ../../scss/ia/_base.scss */
+strong, b {
+  font-weight: bold;
+}
+
+/* line 69, ../../scss/ia/_base.scss */
+em, i {
+  font-style: italic;
+}
+
+/* line 73, ../../scss/ia/_base.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 77, ../../scss/ia/_base.scss */
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+/* line 82, ../../scss/ia/_base.scss */
+.lt-ie9 img {
+  width: auto;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* I took this from HTML5 source code Paul Irish Github */
+/* line 102, ../../scss/ia/_base.scss */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 107, ../../scss/ia/_base.scss */
+.cf:after {
+  clear: both;
+}
+
+/* ======  Typography / RTF Styles ====== */
+/* To prevent overwriting issues, we have very few tag-only styles.
+Instead, we define a class that can be extended */
+/* line 6, ../../scss/ia/_typography.scss */
+body {
+  font-size: 16px;
+}
+
+/* Anchor Styles */
+/* line 13, ../../scss/ia/_typography.scss */
+a {
+  cursor: pointer;
+}
+
+/* RTF Image Styles */
+/*.rtf figure,
+.figure {
+    figcaption {}
+    &.l-float-l {}
+    &.l-float-r {}
+}*/
+/* Header Styles */
+/* line 34, ../../scss/ia/_typography.scss */
+.h1, h1 {
+  font-family: sans-serif;
+  font-size: 36px;
+  padding: 5px 0px;
+}
+
+/* line 39, ../../scss/ia/_typography.scss */
+.h2, h2 {
+  font-family: sans-serif;
+  font-size: 28px;
+}
+
+/* line 43, ../../scss/ia/_typography.scss */
+.h3, h3 {
+  font-family: sans-serif;
+  font-size: 24px;
+}
+
+/* line 47, ../../scss/ia/_typography.scss */
+.h4, h4 {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+/* line 51, ../../scss/ia/_typography.scss */
+.h5, h5 {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+/* line 55, ../../scss/ia/_typography.scss */
+.h6, h6 {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+/* Body Copy Style */
+/* line 63, ../../scss/ia/_typography.scss */
+.p, p {
+  font-family: serif;
+  font-size: 14px;
+}
+
+/* line 67, ../../scss/ia/_typography.scss */
+.ul, ul {
+  font-family: serif;
+  font-size: 14px;
+}
+
+/* line 71, ../../scss/ia/_typography.scss */
+.ol, ol {
+  margin-bottom: 0.5em;
+}
+
+/* Better unordered list styles that don't partially hide behind floated images
+ Customize the bullet size, color, position, etc. based on design
+ https://github.com/BerndtGroup/TBG-Front-End-Boilerplate/issues/23 */
+/* Link with a right-pointing single arrow quote */
+/* line 83, ../../scss/ia/_typography.scss */
+.link-arrow:after {
+  content: '\00a0\203A';
+}
+
+/* Link with a right-pointing double arrow quote */
+/* line 90, ../../scss/ia/_typography.scss */
+.link-arrows:after {
+  content: '\00a0\00bb';
+}
+
+/* line 1, ../../scss/ia/_layout.scss */
+.l-1-col-master .l-content-primary {
+  width: 100%;
+}
+
+/* line 6, ../../scss/ia/_layout.scss */
+.l-2-col-master .l-content-primary {
+  width: 70%;
+  float: left;
+}
+
+/* line 10, ../../scss/ia/_layout.scss */
+.l-2-col-master .content-nav {
+  width: 30%;
+  float: left;
+}
+
+/* line 14, ../../scss/ia/_layout.scss */
+.l-3-col-master .l-content-primary {
+  width: 45%;
+  float: left;
+}
+
+/* line 18, ../../scss/ia/_layout.scss */
+.l-3-col-master .content-nav {
+  width: 30%;
+  float: left;
+}
+
+/* line 22, ../../scss/ia/_layout.scss */
+.l-3-col-master .content-secondary {
+  width: 25%;
+  float: left;
+}
+
+/* line 26, ../../scss/ia/_layout.scss */
+.l-footer {
+  width: 100%;
+  float: left;
+  background: red;
+}
+
+/* line 1, ../../scss/ia/_utility.scss */
+.is-collapsed {
+  display: none;
+}
+
+/*This applies to nav lists*/
+/*This applies to nav toggle*/
+/*This applies to nav toggle*/
+/* line 1, ../../scss/ia/_tiles.scss */
+.tiles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 2%;
+}
+
+/* line 9, ../../scss/ia/_tiles.scss */
+.tile {
+  width: 23%;
+  border: 1px solid black;
+  padding: 20px;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+/* line 15, ../../scss/ia/_tiles.scss */
+.tile:nth-child(4n) {
+  margin-right: 0;
+}
+
+/* line 20, ../../scss/ia/_tiles.scss */
+.tile-header {
+  margin-bottom: 12px;
+}
+
+/* line 24, ../../scss/ia/_tiles.scss */
+.tile-body {
+  margin-bottom: 12px;
+}
+
+/* line 28, ../../scss/ia/_tiles.scss */
+.tile-image {
+  margin-bottom: 12px;
+}
+
+/* This is my small media query */
+@media only screen and (max-width: 600px) {
+  /* line 35, ../../scss/ia/_tiles.scss */
+  .tile {
+    width: 100%;
+    margin-right: 0%;
+  }
+}
+/* This is my medium media query */
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+  /* line 45, ../../scss/ia/_tiles.scss */
+  .tile {
+    width: 49%;
+    margin-right: 2%;
+  }
+  /* line 48, ../../scss/ia/_tiles.scss */
+  .tile:nth-child(2n) {
+    margin-right: 0;
+  }
+}

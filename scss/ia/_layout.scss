@@ -1,0 +1,30 @@
+.l-1-col-master .l-content-primary {
+	width: 100%
+}
+//this means that "this content-primary class inside the 1 column master is X%
+
+.l-2-col-master .l-content-primary {
+	width: 70%;
+	float: left;
+}
+.l-2-col-master .content-nav {
+	width: 30%;
+	float: left;
+}
+.l-3-col-master .l-content-primary {
+	width: 45%;
+	float: left;
+}
+.l-3-col-master .content-nav {
+	width: 30%;
+	float: left;
+}
+.l-3-col-master .content-secondary {
+	width: 25%;
+	float: left;
+}
+.l-footer {
+	width: 100%;
+	float: left;
+	background: red;
+}

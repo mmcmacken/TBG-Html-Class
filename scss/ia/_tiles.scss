@@ -1,0 +1,54 @@
+.tiles {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 100%;
+   margin-top: 2%;
+}
+
+.tile {
+   width: 23%;
+   border: 1px solid black;
+   padding: 20px;
+   margin-right:2%;
+   margin-bottom: 2%;
+   &:nth-child(4n) {
+   		margin-right:0;
+   }
+ }
+
+.tile-header {
+   margin-bottom: 12px;
+}
+
+.tile-body {  
+   margin-bottom: 12px;
+}
+
+.tile-image {
+   margin-bottom: 12px;
+}
+
+/* This is my small media query */
+@media only screen and (max-width: 600px) {
+
+   .tile {
+      width:100%;
+      margin-right:0%;
+   }
+
+}
+
+/* This is my medium media query */
+@media only screen and (max-width: 900px) and (min-width:600px) {
+
+   .tile {
+      width:49%;
+      margin-right:2%;
+      &:nth-child(2n) {
+         margin-right:0;
+      }
+   }
+
+}
+
